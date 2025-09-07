@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DXF Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .table {
+            border-radius: 5px;
+            border: 5px black solid;
+            background-color: #0e86d4;
+        }
+        body {
+            height: 100%;
+            margin: 0;
+            background: linear-gradient(aquamarine,#89CFF0);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <table align="center" height="400px" width="500px" class="table">
+            <thead>
+                <tr><th><h1>PROJECT</h1></th></tr>
+            </thead>
+            <tbody>
+                <tr><td><h3>NAME: <input type="text" name="user_name" id="user_id"></h3></td></tr>
+                <tr><td><h3>Upload the blueprint: <input type="file" name="dxfFile" id="dxfFile" accept=".dxf"></h3></td></tr>
+                <tr><td><input type="submit" value="SUBMIT"></td></tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
